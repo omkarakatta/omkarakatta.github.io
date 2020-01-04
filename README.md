@@ -6,7 +6,7 @@ GitHub allows its users to create a user site and multiple project sites based o
 
 The user site is based off a public repository in the GitHub account named `USER`.github.io. This name will also be the URL of the website. The publication source is the `master` branch.
 
-Meanwhile, project sites can be based on any of the repositories within the GitHub account and will have the URL *`USER`.github.io/`REPO`*. Project sites can be published from the `gh-pages` branch or the `master/docs` branch. 
+Meanwhile, project sites can be based on any of the repositories within the GitHub account and will have the URL *`USER`.github.io/`REPO`*. Project sites can be published from the `gh-pages` branch (see below) or the `master/docs` branch.
 
 
 ### JEKYLL INSTALLATION
@@ -18,13 +18,13 @@ jekyll -v
 ```
 
 ### GITHUB SETUP
-In GitHub, create a new public repository titled `USER`.github.io
+In GitHub, create a new public repository titled `USER`.github.io.
 
 ### JEKYLL SETUP
 ```
 cd Desktop
-jekyll new `USER`.github.io
-cd `USER`.github.io
+jekyll new <USER>.github.io
+cd <USER>.github.io
 ```
 If working on a project site as opposed to a user site: In _config.yaml, change baseurl to the name of the repo: `USER`.github.io
 
@@ -35,7 +35,7 @@ git checkout -b master
 git status
 git add .
 git commit -m "initial commit"
-git remote add origin https://github.com/USER/github.io.git OR git@github.com:omkarakatta/omkarakatta.github.io
+git remote add origin https://github.com/<USER>/github.io.git OR git@github.com:<USER>/<USER>.github.io
 git push origin master
 ```
 
@@ -51,7 +51,8 @@ mkdir pages
 ```
 
 ### ADD PROJECT SITES
-# create GitHub repo online titled <PROJECT>
+Create GitHub repo online titled `REPO`. Then create a local repository with the same name. Note that we will use a gh-pages branch. If we want to use an existing repository, we will create this branch with its own commit history.
+```
 cd
 cd Desktop
 mkdir <PROJECT>
@@ -59,17 +60,18 @@ cd <PROJECT>
 git init
 git checkout --orphan gh-pages
 jekyll new .
-# EDIT GEMFILE!!!
-git remote add origin <GITHUB URL>
+```
+Now we need to edit the Gemfile. Remove `gem "jekyll", "~> 4.0.0"` and change `gem "github-pages", group: :jekyll_plugins` to `gem "github-pages", "~> 203",  group: :jekyll_plugins` after uncommenting the line.
+```
+git remote add origin https://github.com/<USER>/<REPO> OR git@github.com:<USER>/<REPO>
 git add .
 git commit -m "initial commit"
 git push -u origin gh-pages
-# modify as needed
-
+```
 
 
 ### RESOURCES
-# https://www.youtube.com/watch?v=fqFjuX4VZmU&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=19
-# https://github.com/fditraglia/fditraglia.github.io
-# https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll
-# https://gist.github.com/jexchan/2351996
+* [Giraffe Academy Videos](https://www.youtube.com/watch?v=fqFjuX4VZmU&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=19)
+* [Professor DiTraglia's user GitHub](https://github.com/fditraglia/fditraglia.github.io)
+# [GitHub Pages Guide](https://help.github.com/en/github/working-with-github-pages/)
+# [Multiple SSH Keys](https://gist.github.com/jexchan/2351996)

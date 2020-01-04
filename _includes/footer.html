@@ -10,7 +10,7 @@
             {%- if site.author -%}
               {{ site.author | escape }}
             {%- else -%}
-              {{ site.title | escape }}
+              <a href="{{ site.baseurl }}/">{{ site.title | escape }}</a>
             {%- endif -%}
             </li>
         </ul>

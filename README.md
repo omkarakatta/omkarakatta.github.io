@@ -73,5 +73,5 @@ git push -u origin gh-pages
 ### RESOURCES
 * [Giraffe Academy Videos](https://www.youtube.com/watch?v=fqFjuX4VZmU&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=19)
 * [Professor DiTraglia's user GitHub](https://github.com/fditraglia/fditraglia.github.io)
-# [GitHub Pages Guide](https://help.github.com/en/github/working-with-github-pages/)
-# [Multiple SSH Keys](https://gist.github.com/jexchan/2351996)
+* [GitHub Pages Guide](https://help.github.com/en/github/working-with-github-pages/)
+* [Multiple SSH Keys](https://gist.github.com/jexchan/2351996)

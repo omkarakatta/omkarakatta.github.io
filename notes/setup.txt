@@ -1,0 +1,108 @@
+Last login: Sat Jan  4 12:18:03 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Omkars-MacBook-Pro-2:~ omkarkatta$ cd Desktop
+(base) Omkars-MacBook-Pro-2:Desktop omkarkatta$ jekyll new omkarakatta.github.io
+Running bundle install in /Users/omkarkatta/Desktop/omkarakatta.github.io... 
+  Bundler: /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require': dlopen(/usr/local/Cellar/ruby/2.6.3/lib/ruby/2.6.0/x86_64-darwin18/openssl.bundle, 9): Library not loaded: /usr/local/opt/openssl/lib/libssl.1.0.0.dylib (LoadError)
+  Bundler: Referenced from: /usr/local/Cellar/ruby/2.6.3/lib/ruby/2.6.0/x86_64-darwin18/openssl.bundle
+  Bundler: Reason: image not found - /usr/local/Cellar/ruby/2.6.3/lib/ruby/2.6.0/x86_64-darwin18/openssl.bundle
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/Cellar/ruby/2.6.3/lib/ruby/2.6.0/openssl.rb:13:in `<top (required)>'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/security.rb:12:in `<top (required)>'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/package.rb:44:in `<top (required)>'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/dependency_installer.rb:4:in `<top (required)>'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/installer.rb:4:in `<top (required)>'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/cli/install.rb:65:in `run'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/cli.rb:256:in `block in install'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/settings.rb:124:in `temporary'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/cli.rb:255:in `install'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/cli.rb:30:in `dispatch'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/cli.rb:24:in `start'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/exe/bundle:46:in `block in <main>'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/lib/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+  Bundler: from /usr/local/lib/ruby/gems/2.6.0/gems/bundler-2.1.2/exe/bundle:34:in `<main>'
+(base) Omkars-MacBook-Pro-2:Desktop omkarkatta$ cd omkarakatta.github.io/
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git init
+Initialized empty Git repository in /Users/omkarkatta/Desktop/omkarakatta.github.io/.git/
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git checkout -b master
+Switched to a new branch 'master'
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	404.html
+	Gemfile
+	_config.yml
+	_posts/
+	about.markdown
+	index.markdown
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git add .
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git commit -m "initial commit"
+[master (root-commit) 8c7de2b] initial commit
+ 7 files changed, 168 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 404.html
+ create mode 100644 Gemfile
+ create mode 100644 _config.yml
+ create mode 100644 _posts/2020-01-04-welcome-to-jekyll.markdown
+ create mode 100644 about.markdown
+ create mode 100644 index.markdown
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git remote add origin git@github.com:omkarakatta/omkarakatta.github.io.git
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git push origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 3.60 KiB | 3.60 MiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To github.com:omkarakatta/omkarakatta.github.io.git
+ * [new branch]      master -> master
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git status
+On branch master
+nothing to commit, working tree clean
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ mkdir _drafts
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ mkdir _layouts
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ mkdir _includes
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ mkdir _data
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ mkdir _sass
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ mkdir assets
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ mkdir pages
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ ls -a
+.		404.html	_drafts		_sass		pages
+..		Gemfile		_includes	about.markdown
+.git		_config.yml	_layouts	assets
+.gitignore	_data		_posts		index.markdown
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git status
+On branch master
+nothing to commit, working tree clean
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ mkdir notes
+(base) Omkars-MacBook-Pro-2:omkarakatta.github.io omkarkatta$ 

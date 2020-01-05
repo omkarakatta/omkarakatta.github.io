@@ -10,6 +10,7 @@ Meanwhile, project sites can be based on any of the repositories within the GitH
 
 
 ### JEKYLL INSTALLATION
+Note: run `brew upgrade ruby` to bring Ruby up-to-date.
 ```
 ruby -v
 gem -v

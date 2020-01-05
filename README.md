@@ -75,3 +75,4 @@ git push -u origin gh-pages
 * [Professor DiTraglia's user GitHub](https://github.com/fditraglia/fditraglia.github.io)
 * [GitHub Pages Guide](https://help.github.com/en/github/working-with-github-pages/)
 * [Multiple SSH Keys](https://gist.github.com/jexchan/2351996)
+* [Jonathan McGlone Blog Post](http://jmcglone.com/guides/github-pages/)

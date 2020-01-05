@@ -50,14 +50,15 @@ mkdir _sass
 mkdir assets
 mkdir pages
 ```
+The _drafts folder is ignored when building the site. Hence, work-in-progress blog posts can stay in there will ready-to-be-published posts should be in the _posts folder. The _layouts, _includes, and _sass folders are for formatting the website. The assets folder contains external documents while the pages folder stores the webpages themselves.
 
 ### ADD PROJECT SITES
 Create GitHub repo online titled `REPO`. Then create a local repository with the same name. Note that we will use a gh-pages branch. If we want to use an existing repository, we will create this branch with its own commit history.
 ```
 cd
 cd Desktop
-mkdir <PROJECT>
-cd <PROJECT>
+mkdir <REPO>
+cd <REPO>
 git init
 git checkout --orphan gh-pages
 jekyll new .

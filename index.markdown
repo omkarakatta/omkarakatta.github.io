@@ -2,21 +2,14 @@
 layout: home
 ---
 
-&nbsp;
+Omkar is a senior studying Mathematical Economics at the University of Pennsylvania.
 
-<p style="text-align: center;"> <b>Undergraduate Student <br>
-University of Pennsylvania</b> </p>
+He is a research assistant to Dr. Femida Handy of the School of Social Policy and Practice, and is also a Tutor at the Tutoring Center. Extracurricularly, he is the President of Penn Cinema Initiative, and he build sets for Penn Singers Light Opera Company.
 
-<p style="text-align: center;"> Mathematical Economics Major <br>
-Creative Writing Minor <br>
-Class of 2020 </p>
 
-&nbsp;
+In July of 2020, Omkar will be a Research Professional at the [Becker Friedman Institute for Economics](https://bfi.uchicago.edu) at the [University of Chicago](https://www.uchicago.edu).
 
----
 
-&nbsp;
+Omkar aspires to advance methodological scholarship in causal inference and apply cutting-edge techniques in machine learning and data science to the social sciences, particularly education.
 
-<p style="text-align: center;"> Click <a class="page-link" href="/assets/KattaOmkar_CV.pdf">here</a> to view my Curriculum Vitae. </p>
-<!-- <p style="text-align: center;"> Click <a class="page-link" href="/assets/KattaOmkar_ResearchStatement.pdf">here</a> to view my Research Statement. </p>
-<p style="text-align: center;"> Click <a class="page-link" href="/assets/KattaOmkar_TeachingPhilosophy.pdf">here</a> to view my Teaching Philosophy. </p> -->
+Click <a class="page-link" href="/assets/KattaOmkar_CV.pdf">here</a> to view Omkar's Curriculum Vitae. </p>

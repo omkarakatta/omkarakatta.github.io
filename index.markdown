@@ -2,18 +2,23 @@
 layout: home
 ---
 
-**Candidate for B.A. in Mathematical Economics**
-Class of 2020 \| University of Pennsylvania.
+**Candidate for B.A. in Mathematical Economics**\
+Class of 2020, University of Pennsylvania.
 
-**Research Assistant** \| Dr. Femida Handy, School of Social Policy and Practice
+**Research Assistant**\
+Dr. Femida Handy, School of Social Policy and Practice
 
-**Economics, Statistics, and Mathematics Tutor** \| Tutoring Center
+**Economics, Statistics, and Mathematics Tutor**\
+Tutoring Center
 
-**Research Peer Advisor** \| Center for Undergraduate Research and Fellowships
+**Research Peer Advisor**\
+Center for Undergraduate Research and Fellowships
 
-**President** \| Penn Cinema Initiative
+**President**\
+Penn Cinema Initiative
 
-**Set Captain** \| Penn Singers Light Opera Company
+**Set Captain**\
+Penn Singers Light Opera Company
 
 <!-- **Research Interests** -->
 

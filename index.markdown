@@ -27,4 +27,6 @@ Penn Singers Light Opera Company
 
 <!-- Omkar aspires to advance methodological scholarship in causal inference and apply cutting-edge techniques in machine learning and data science to the social sciences, particularly education. -->
 
+---
+
 Click <a class="page-link" href="/assets/KattaOmkar_CV.pdf">here</a> to view my Curriculum Vitae.

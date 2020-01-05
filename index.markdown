@@ -3,7 +3,7 @@ layout: home
 ---
 
 **Candidate for B.A. in Mathematical Economics**<br/>
-Class of 2020, University of Pennsylvania.
+Class of 2020, University of Pennsylvania
 
 **Research Assistant**<br/>
 Dr. Femida Handy, School of Social Policy and Practice

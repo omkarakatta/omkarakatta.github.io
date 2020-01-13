@@ -1,3 +1,11 @@
+## NOTES TO SELF
+
+* import most-recent CV from assets repository
+* create teaching philosophy
+* create research philosophy
+
+## SETUP
+
 ### OBJECTIVE
 Create a website using Jekyll and GitHub Pages.
 

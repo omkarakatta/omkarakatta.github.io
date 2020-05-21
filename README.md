@@ -71,7 +71,7 @@ git init
 git checkout --orphan gh-pages
 jekyll new .
 ```
-Now we need to edit the Gemfile. Remove `gem "jekyll", "~> 4.0.0"` and change `gem "github-pages", group: :jekyll_plugins` to `gem "github-pages", "~> 203",  group: :jekyll_plugins` after uncommenting the line.
+Now we need to edit the Gemfile. Remove `gem "jekyll", "~> 4.0.0"` and change `gem "github-pages", group: :jekyll_plugins` to `gem "github-pages", "~> 203",  group: :jekyll_plugins` after uncommenting the line. Replace 203 with what is in [Dependency Versions](https://pages.github.com/versions/)
 ```
 git remote add origin https://github.com/<USER>/<REPO> OR git@github.com:<USER>/<REPO>
 git add .
@@ -79,10 +79,10 @@ git commit -m "initial commit"
 git push -u origin gh-pages
 ```
 
-
 ### RESOURCES
 * [Giraffe Academy Videos](https://www.youtube.com/watch?v=fqFjuX4VZmU&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=19)
 * [Professor DiTraglia's user GitHub](https://github.com/fditraglia/fditraglia.github.io)
 * [GitHub Pages Guide](https://help.github.com/en/github/working-with-github-pages/)
 * [Multiple SSH Keys](https://gist.github.com/jexchan/2351996)
 * [Jonathan McGlone Blog Post](http://jmcglone.com/guides/github-pages/)
+* https://github.com/prose/starter/issues/44

@@ -4,8 +4,8 @@ layout: home
 
 
 **Research Professional**<br/>
-[Big Data Initiative](\href{https://bfi.uchicago.edu/initiative/big-data/) at [Becker Friedman Institute for Economics](https://bfi.uchicago.edu)<br/>
-Alexander Torgovitsky & Guillaume Pouliot<br/>
+[Becker Friedman Institute for Economics](https://bfi.uchicago.edu)<br/>
+Supervisors: [Alexander Torgovitsky](https://a-torgovitsky.github.io) & [Guillaume Pouliot](https://sites.google.com/site/guillaumeallairepouliot/)<br/>
 
 **B.A. in Mathematical Economics with Distinction**<br/>
 Minors in Creative Writing and Statistics<br/>

@@ -17,9 +17,9 @@ Class of 2020, University of Pennsylvania<br/>
 *Education*: Incentive Design, Curriculum Design, Pedagogical Evaluation<br/>
 *Other*: Decision-Making during Pandemics -->
 I aspire to advance methodological scholarship in causal inference, microeconometrics, and machine learning
-for greater understanding of the social sciences, particularly education, in conjunction with my interests in game theory, decision theory, and market design to the social sciences, particularly education.
+for greater understanding of the social sciences, particularly education, in conjunction with my interests in game theory, decision theory, and market design.
 <!-- My main interests in economics exist at the intersection of theory and application to include the subjects of microeconometrics, game theory, market design, and decision theory. I am also interested in applying my economics POV to the field of education. In particular, -->
-<!-- I want to use decision theory and game theory to understand how and why students learn in order to structure incentives so they want to learn. I would like to evaluate (nonstandard) pedagogy and curriculum design with techniques from causal inference and microeconometrics in both observational and experimental settings. -->
+Mpre specifically, using the economics POV, I hope to understand how and why students learn in order to structure incentives so they want to learn, and I would like to evaluate (nonstandard) pedagogy and curriculum design in both observational and experimental settings.
 
 <!-- **Research Assistant**<br/> -->
 <!-- School of Social Policy and Practice at University of Pennsylvania -->

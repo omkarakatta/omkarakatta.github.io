@@ -1,0 +1,471 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Omkar A. Katta
+%%%	Curriculum Vitae
+%%%	template inspired by https://texblog.org/2012/04/25/writing-a-cv-in-latex/
+%%%	Addison Hu (github: )
+%%%	Mike King (github: mikeking214)
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper, 10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Packages
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[top = 0.25in, bottom = 0.5in, left = 0.75in, right = 0.75in, includeheadfoot]{geometry}
+	\geometry{textwidth = 5in}
+\usepackage{fancyhdr} % fancy headers
+\usepackage[hidelinks]{hyperref} % hyperlinks
+\usepackage{fontspec} % configure fonts
+\usepackage[explicit]{titlesec} % section styles
+\usepackage{enumitem} % enumerated lists
+\usepackage{xparse} % defining macros
+\usepackage{array} % defining column types for tables
+\usepackage{natbib} % publications
+\usepackage{bibentry} % publications
+\usepackage{xcolor} % colors
+\usepackage[symbol]{footmisc} % footers
+\usepackage{contour} % used in conjunction with ulem in order to underline
+\usepackage[normalem]{ulem} % for underlining
+\usepackage{graphicx} % LargerCdot
+\usepackage{fontawesome} % symbols/icons ; http://mirrors.ibiblio.org/CTAN/fonts/fontawesome/doc/fontawesome.pdf
+\usepackage{changepage} % adjust textwidth esp. under subsections
+\usepackage{lipsum} %dummy text
+\usepackage{xhfill} % variant of \hrulefill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Fonts
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setmainfont{Avenir Next}
+
+\newfontfamily\namefont{Bitter} %FreeSerif
+\newfontfamily\sectionfont{Bitter}
+\newfontfamily\specialfont{Bitter}
+\newfontfamily\usualfont{Avenir Next}
+
+%%% Underlining %%% contour, ulem
+
+\renewcommand{\ULdepth}{3pt}
+\contourlength{2pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+%\newcommand\reduline{\bgroup\markoverwith
+%      {\textcolor{red}{\rule[-0.35ex]{2pt}{0.4pt}}}\ULon}
+%      
+%  \newcommand\blackuline{\bgroup\markoverwith
+%      {\textcolor{black}{\rule[-0.35ex]{2pt}{0.4pt}}}\ULon}
+
+\newcommand{\lmr}{\fontfamily{lmr}\selectfont} % Latin Modern Roman
+\newcommand{\lmss}{\fontfamily{lmss}\selectfont} % Latin Modern Sans
+\newcommand{\lmtt}{\fontfamily{lmtt}\selectfont} % Latin Modern Mono
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Page Headers & Footers
+%%% 	fancyhdr package
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{ {\itshape last updated:} \today}
+\fancyfoot[C]{{\name}}
+\fancyfoot[R]{\thepage}
+%\thispagestyle{fancy}
+
+\renewcommand{\headrulewidth}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Footnotes
+%%%	footmisc package
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%minipage footnote
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}	%minipage footnote
+\renewcommand\footnoterule{%
+  \kern 0.75in
+  \hbox to \textwidth{\hfill\vrule height 0.4pt width .4\textwidth}
+  \kern 10pt
+}
+% Move footnotes to right hand side of page instead of left
+\makeatletter
+    \renewcommand\@makefntext[1]{\raggedleft \rightskip0em\hskip0em \@makefnmark#1}
+\makeatother
+
+% Increase size of footnote
+\makeatletter
+\renewcommand{\@makefnmark}{\hbox{\textsuperscript{\large{\@thefnmark}}}}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Layout
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\parindent{0in} % Remove indentation
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Lists
+%%% 	enumitem package
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Make lists without bullets
+\newcommand*{\LargerCdot}{\raisebox{-0.7ex}{\scalebox{2.5}{$\begingroup\color{black}\cdot\endgroup$}}} %for vrule, use -1ex, use lightgray
+\setlist[itemize]{noitemsep, topsep = 0pt, leftmargin=*, label = {$\LargerCdot$}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Section Styles
+%%% 	titlesec package
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Length of \titlerule  
+\let\oldtitleline\titleline
+\renewcommand{\titleline}{\oldtitleline*}
+\setlength{\titlewidth}{\textwidth}
+
+% Section
+\titleformat{\section}
+    {\sectionfont\Large\bfseries}
+    {\thesection}{1em}{\myuline{#1}\xrfill[-3pt]{0.4pt}}
+\titlespacing{\section}
+    {0em}{1em}{4pt}
+    
+% Subsection
+ \titleformat{\subsection}
+    {\specialfont\large}
+    {\thesubsection}{1em}{}[\vskip-10pt{\makebox[\linewidth][l]{\color{gray}\rule{0.35\textwidth}{0.5pt}}}]
+\titlespacing{\subsection}
+    {0em}{1em}{0em}
+    
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	My Formatting Definitions
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\NAMEhrule{\leavevmode\leaders\hrule height 10pt depth \dimexpr-5pt \hfill \kern0pt}
+
+\newcommand\minititle[1]{{\specialfont  #1}}
+\newcommand\subtext[1]{{\specialfont \itshape \small #1}}
+
+\newcommand\insertspace{\vspace{8pt}}
+\newcommand\inserthalfspace{\vspace{3pt}}
+\newcommand\deletespace{\vspace{-10pt}}
+
+\NewDocumentCommand \titledate {m m}{
+	#1 \hfill {\small #2}
+}
+\newcommand\pairtitledate[3]{\titledate{#1, {\itshape\small #2}}{#3}}
+
+
+% roman numeral
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	My Definitions
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\present{Present}
+\def\name{Omkar~A.~Katta}
+\def\phone{(484)~432-2662}
+\def\email{omkarakatta@gmail.com}
+\def\permanentlineone{1004~Grayson~Drive}
+\def\permanentlinetwo{Souderton,~PA~18964}
+\def\temporarylineone{3910~S.~Irving~Street~MB~232}
+\def\temporarylinetwo{Philadelphia,~PA~19104}
+
+\def\linkedin{}
+\def\github{omkarakatta}
+\def\website{omkarakatta.github.io}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Hyper Setup
+%%% 	hyperref package
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+%  colorlinks = true,
+%  urlcolor = black,
+%  linkcolor=black,
+  pdfauthor = {\name},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	Header
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\thispagestyle{fancy}
+{
+\NAMEhrule \hspace{0.1in} {{\namefont\Huge\bfseries{\name}}} \hspace{0.1in} \NAMEhrule
+\vspace{0.1in}
+
+%Undergraduate Senior \hfill 
+\href{http://\website}{\faUser \hspace{3pt} \website} \hfill \href{mailto:\email}{ \faEnvelope \hspace{3pt} \email} \hfill \href{http://www.github.com/\github}{ \faGithub \hspace{2pt} \github} 
+}
+
+\vspace{0.1in}
+
+
+
+\section*{Education} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titledate{ \minititle{University of Pennsylvania}, Bachelor of Arts}{ May 2020 } \\
+\titledate{\emph{summa cum laude} with Distinction in Mathematical Economics}{\subtext{GPA:} 3.95/4.00} \\
+Minors in Creative Writing and Statistics 
+
+\section*{Research Experience} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pairtitledate{\minititle{Research Professional}}{\href{https://bfi.uchicago.edu/initiative/big-data/}{Big Data Initiative} at the \href{https://bfi.uchicago.edu}{Becker Friedman Institute for Economics}}{Jul 2020 - \present} \\
+\subtext{Mentors:} \href{https://a-torgovitsky.github.io}{Alexander Torgovitsky}, \href{https://sites.google.com/site/guillaumeallairepouliot/}{Guillaume Pouliot}
+
+\insertspace
+
+\pairtitledate{\minititle{Research Assistant}}{ \href{https://www.sp2.upenn.edu}{School of Social Policy and Practice} at the University of Pennsylvania}{Sep 2017 - May 2020} \\
+\subtext{Mentor:} \href{https://www.sp2.upenn.edu/people/view/femida-handy/}{Femida Handy}
+
+\insertspace
+
+\pairtitledate{\minititle{Leadership Alliance Intern}}{\href{http://yrise.yale.edu}{Yale Research Initiative on Innovation and Scale}}{Jun 2019 - Jul 2019} \\
+\subtext{Mentor:} \href{https://faculty.som.yale.edu/mushfiqmobarak/}{Ahmed Mushfiq Mobarak} 
+
+\section*{Research Synopsis} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titledate{\minititle{Nonprofit Governance: Gender Diversity on Boards}}{Nov 2018 - \present} \\
+\subtext{With:} John Bush, Hannah Christine, Allison Russell, Femida Handy \\
+\subtext{Summary:} Using data from IRS 990s, we determine whether the gender composition of nonprofit boards influences the adoption of good governance practices.
+
+\insertspace
+
+\titledate{\minititle{To Be or Not To Be Active: Game-Theoretic Decision-Making During Pandemics}}{Apr 2020 - \present} \\
+\subtext{Advisors:} Aislinn Bohren, Ashwin Kambhampati \\
+\subtext{Summary:} I model the trade-off between reducing the risk of spreading/catching the virus and being socially and economically active.
+
+\insertspace 
+
+\titledate{\minititle{Face to Face vs. Face to Screen: The Short-Term Evaluation of Telesecundarias}}{Apr 2020 - \present} \\
+\subtext{Advisor:} Petra Todd \\
+\subtext{Summary:} With a Generalized Roy Model, I quantify the effects of attending a telesecundaria relative to attending a traditional school in Mexico on ENLACE test scores in Spanish and Math.
+
+\insertspace
+
+\titledate{\minititle{Creating a Toilet Habit in Kenya}}{Jun 2019 - Jul 2019} \\
+\subtext{With:} Ahmed Mushfiq Mobarak, Judy Chevalier, Johann Caro-Burnett \\
+\subtext{Summary:} We implemented a large-scale field experiment in Nairobi, Kenya that observes toilet use before, during, and after various incentive schemes to understand how habits form and behavior persists. 
+
+\insertspace
+
+\titledate{\minititle{Intergenerational Transmission of Environmental Values}}{Mar 2018 - Jun 2019} \\
+\subtext{With:} Femida Handy, Itay Greenspan, Tally Katz-Gerro \\
+\subtext{Summary:} We explored parental environmental behaviors and socialization domains as predictors for child environmental behavior by using national samples of parent-child dyads in Israel, South Korea, and the United States.
+
+\insertspace
+
+\titledate{\minititle{The Influence of Strategic Potential of a Tennis Game on Effort}}{Oct 2018 - Dec 2019} \\ 
+\subtext{Advisor:} Francis DiTraglia \\
+\subtext{Summary:} Using point-by-point data and player statistics from the ATP website, I studied the likelihood of winning a tennis match when losing a game intentionally would be strategically beneficial.
+
+\insertspace
+
+\titledate{\minititle{Ephemerality of Preferences}}{Sep 2017 - Dec 2017} \\
+\subtext{With:} Justin Mignatti ; \subtext{Advisor:} Irina Pimenova \\
+\subtext{Summary:} We determined whether preferences change within two weeks by comparing the results of baseline and endline surveys that ask participants to rank a various sets of goods.
+
+\section*{Conferences, Presentations, and Talks} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titledate{\minititle{Center for Undergraduate Research: Spring Research Poster Digital Expo}}{Apr 2020} \\
+\titledate{Nonprofit Governance: Gender Diversity on Boards}{Virtual}
+
+\insertspace
+
+\titledate{\minititle{Association for Research on Nonprofit Organizations and Voluntary Action}}{Nov 2019} \\
+\titledate{Does Gender Composition Influence Adoption of Good Governance Practices?}{San Diego, CA} \\
+\subtext{With:} John Bush, Hannah Christine, Allison Russell, Femida Handy
+
+\insertspace
+
+\titledate{\minititle{Center for Undergraduate Research: Research \& Fellowships Week}}{Nov 2019} \\
+\titledate{Undergraduate Research Panel: What I Wish I Had Known About Research?}{Philadelphia, PA}
+
+\insertspace
+
+\titledate{\minititle{Voluntary Sector and Voluntary Research Conference}}{Sep 2019} \\
+\titledate{Volunteering in Vietnam: Motivations and Meaning}{Birmingham, UK} \\
+\subtext{With:} Allison Russell, Femida Handy
+
+%\insertspace
+%
+%\titledate{\minititle{Center for Undergraduate Research: Fall Research Expo and Open House}}{Sep 2019} \\
+%\titledate{Nonprofit Governance: Gender Diversity on Boards}{Philadelphia, PA}
+
+\insertspace
+
+\titledate{\minititle{Leadership Alliance National Symposium}}{Jul 2019} \\
+\titledate{Toilet Habit in Kenya: Formation and Persistence of Good Sanitary Practices}{Hartford, CT}
+
+\section*{Publications} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Omkar A. Katta. The Longevity of Senet and its Symbolism to Ancient Egyptian Beliefs (2018). \textit{American Research Center in Egypt - Pennsylvania Chapter}. 
+
+\insertspace
+
+Omkar A. Katta (contributor). A Tail of Two Employees (2018). In Femida Handy and Allison Russell (Eds.), \textit{Ethics for Social Impact: Ethical Decision-Making in Nonprofit Organizations} \ (pp. 219 - 229). Palgrave Macmillan. 
+
+\section*{Honors and Awards} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titledate{\minititle{Phi Beta Kappa}}{May 2020 - \present} 
+
+\inserthalfspace
+
+\pairtitledate{\href{https://www.sas.upenn.edu/news/penn-arts-sciences-names-2020-deans-scholars}{\minititle{Dean's Scholar}}}{Penn College of Arts and Sciences}{May 2020}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{Dean's List}}{University of Pennsylvania}{Jul 2017, '18, '19}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{Flagbearer}}{Dept. of Mathematical Economics, University of Pennsylvania}{May 2020}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{Kanta Marwah Prize for Undergraduate Research Award}}{(\$700) University of Pennsylvania}{Nov 2019}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{Philosophy of Finance Fellowship}}{Penn Collegium Society}{Sep 2019 - May 2019}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{Summer Undergraduate Research Fellowship}}{(\$3000) Yale University}{Jun 2019 - Jul 2019}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{Grant for Faculty Mentoring Undergraduates}}{(\$2000) University of Pennsylvania}{May 2019 - Aug 2019}
+
+\section*{Other Experience} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pairtitledate{\minititle{Economics, Statistics, and Mathematics Tutor}}{The Tutoring Center}{Jan 2017 - May 2020}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{President}}{Penn Cinema Initiative}{Sep 2018 - May 2020}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{Research Peer Advisor}}{Center for Undergraduate Research and Fellowships}{Sep 2019 - May 2020}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{Set Captain}}{Penn Singers Light Opera Company}{Jan 2018 - May 2020}
+
+\inserthalfspace
+
+\pairtitledate{\minititle{Teaching Assistant}}{ECON103: Statistics for Economists}{Jan 2019 - May 2019}
+
+
+\section*{Miscellaneous} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subtext{Technical Skills:} R, Stata, Python, Git, Excel, {\lmr \LaTeX}
+
+\inserthalfspace
+
+\subtext{Special Interests:} Graphite and Digital Sketching, Macrophotography, Choir, Theatre, Percussion
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section*{Research Interests} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subtextnormal{Economics:} Microeconometrics, Causal Inference, Game Theory, Market Design, Decision Theory \\
+%\subtextnormal{Education:} Incentive Design, Curriculum Design, Pedagogical Evaluation
+
+
+RESEARCH APPOINTMENTS
+
+RESEARCH SYNOPSIS
+
+Collecting Data on the Recipients of Military Decorations (Mar 2019 - Sep 2019)
+With: Emilio Borghesan
+Summary: Networking with data librarians, government officials, and military historians, we want to con-
+struct a database with information about the recipients of military decorations such as the Medal of Honor,
+and apply economic theory to better understand this sparsely studied field of research.
+
+OTHER EXPERIENCE
+
+Copyeditor, MovieGoer, Sep 2019 - Present
+
+Volunteer Farmer, Yale Sustainable Food Program, Jun 2019 - Jul 2019
+
+Volunteer Mentor, Mentors Residential Program at Lea Elementary School, Aug 2016 -May 2017
+
+Baritone, University Chamber Choir, Aug 2016 - May 2019
+
+AWARDS
+
+Robert \& Amy Stavis Scholarship, Aug 2016 - May 2020
+
+Alan \& Kim Hartman Scholarship, Aug 2017 - May 2020
+
+MISCELLANEOUS
+
+\subtext{Data Science / Programming:} R, Stata, Python, Git, Processing, Excel
+
+\inserthalfspace
+
+\subtext{Document / Multimedia Presentation:} {\lmr \LaTeX}, Procreate, Illustrator, GarageBand
+

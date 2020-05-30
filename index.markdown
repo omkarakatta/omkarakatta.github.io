@@ -46,4 +46,4 @@ Using my theoretical and empirical background in economics, I aspire to advance 
 <!-- --- -->
 <br/>
 
-Click <a class="page-link" href="/assets/KattaOmkar_CV.pdf">here</a> to view my Curriculum Vitae.
+Click <a class="page-link" href="/assets/CV/KattaOmkar_CV.pdf">here</a> to view my Curriculum Vitae.

@@ -2,23 +2,39 @@
 layout: home
 ---
 
-**Candidate for B.A. in Mathematical Economics**<br/>
-Class of 2020, University of Pennsylvania
 
-**Research Assistant**<br/>
-Dr. Femida Handy, School of Social Policy and Practice
+**Research Professional**<br/>
+[Big Data Initiative](\href{https://bfi.uchicago.edu/initiative/big-data/) at [Becker Friedman Institute for Economics](https://bfi.uchicago.edu)<br/>
+Alexander Torgovitsky & Guillaume Pouliot<br/>
 
-**Economics, Statistics, and Mathematics Tutor**<br/>
-Tutoring Center
+**B.A. in Mathematical Economics with Distinction**<br/>
+Minors in Creative Writing and Statistics<br/>
+Class of 2020, University of Pennsylvania<br/>
+*summa cum laude*, Phi Beta Kappa, Dean's Scholar
 
-**Research Peer Advisor**<br/>
-Center for Undergraduate Research and Fellowships
+<!-- **Research Interests**<br/> -->
+<!-- *Economics*: Microeconometrics, Causal Inference, Game Theory, Market Design, Decision Theory<br/>
+*Education*: Incentive Design, Curriculum Design, Pedagogical Evaluation<br/>
+*Other*: Decision-Making during Pandemics -->
+I aspire to advance methodological scholarship in causal inference and apply cutting-edge techniques in machine learning and data science to the social sciences, particularly education.
+<!-- My main interests in economics exist at the intersection of theory and application to include the subjects of microeconometrics, game theory, market design, and decision theory. I am also interested in applying my economics POV to the field of education. In particular,  -->
+I want to use decision theory and game theory to understand how and why students learn in order to structure incentives so they want to learn. I would like to evaluate (nonstandard) pedagogy and curriculum design with techniques from causal inference and microeconometrics in both observational and experimental settings.
 
-**President**<br/>
-Penn Cinema Initiative
+<!-- **Research Assistant**<br/> -->
+<!-- School of Social Policy and Practice at University of Pennsylvania -->
+<!-- Femida Handy -->
 
-**Set Captain**<br/>
-Penn Singers Light Opera Company
+<!-- **Economics, Statistics, and Mathematics Tutor**<br/> -->
+<!-- The Tutoring Center -->
+
+<!-- **Research Peer Advisor**<br/> -->
+<!-- Center for Undergraduate Research and Fellowships -->
+
+<!-- **President**<br/> -->
+<!-- Penn Cinema Initiative -->
+
+<!-- **Set Captain**<br/> -->
+<!-- Penn Singers Light Opera Company -->
 
 <!-- **Research Interests** -->
 

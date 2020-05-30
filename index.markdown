@@ -8,7 +8,7 @@ layout: home
 Supervisors: [Alexander Torgovitsky](https://a-torgovitsky.github.io) & [Guillaume Pouliot](https://sites.google.com/site/guillaumeallairepouliot/)<br/>
 
 **B.A. in Mathematical Economics with Distinction**<br/>
-<!-- Minors in Creative Writing and Statistics<br/> -->
+Minors in Creative Writing and Statistics<br/>
 Class of 2020, University of Pennsylvania<br/>
 *summa cum laude*, Phi Beta Kappa, Dean's Scholar
 

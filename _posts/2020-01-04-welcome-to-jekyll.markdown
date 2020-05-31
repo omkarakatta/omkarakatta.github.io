@@ -34,10 +34,8 @@ Here is an example of some math typesetting. Use \\$ for inline math expressions
 
 $$
 \begin{align}
-  \nabla\times\vec{\mathbf{B}}-\frac{1}{c}\frac{\partial\vec{\mathbf{E}}}{\partial t} &= \frac{4\pi}{c}\vec{\mathbf{j}} \\
-  \nabla\cdot\vec{\mathbf{E}} &= 4\pi\rho \\
-  \nabla\times\vec{\mathbf{E}}+\frac{1}{c}\frac{\partial\vec{\mathbf{B}}}{\partial t} &= \vec{\mathbf{0}} \\
-  \nabla\cdot\vec{\mathbf{B}} &= 0\label{eqn:example}
+  a^2 + b^2 &= c^2
+  \implies \left(\frac{a}{c}\right)^2 + \left(\frac{b}{c}\right)^2 &= 1. \label{eqn:example}
 \end{align}
 $$
 
@@ -45,9 +43,8 @@ I can reference \eqref{eqn:example} because it is labeled. The `align*` environm
 
 $$
 \begin{align*}
-  \dot{x} &= \sigma(y - x) \\
-  \dot{y} &= \rho x - y - xz \\
-  \dot{z} &= -\beta z + xy
+  \sin(\theta) &= \frac{a}{c}, \textnormal{ and } \\
+  \cos(\theta) &= \frac{b}{c}.
 \end{align*}
 $$
 

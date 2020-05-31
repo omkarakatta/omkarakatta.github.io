@@ -30,11 +30,11 @@ print("Hello World!")
 
 "To find the appropriate identifier to use for the language you want to highlight, look for the “short name” on the [Rouge wiki](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)." - [Jekyll Tags Filter](https://jekyllrb.com/docs/liquid/tags/)
 
-Here is an example of some math typesetting. Use \\$ for inline math expressions, e.g., $a^2 + b^2 = c^2$. Use \\$\\$ and `align` environment as shown below.
+The setup for enabling math typesetting can be found on [Zixu Wang's blog post](https://hw311.me/en/jekyll/2019/01/23/support-latex-in-jekyll-blog/). Use \\$ for inline math expressions, e.g., $a^2 + b^2 = c^2$. Use \\$\\$ and `align` environment as shown below.
 
 $$
 \begin{align}
-  a^2 + b^2 &= c^2
+  a^2 + b^2 &= c^2 \\
   \implies \left(\frac{a}{c}\right)^2 + \left(\frac{b}{c}\right)^2 &= 1. \label{eqn:example}
 \end{align}
 $$
@@ -43,7 +43,7 @@ I can reference \eqref{eqn:example} because it is labeled. The `align*` environm
 
 $$
 \begin{align*}
-  \sin(\theta) &= \frac{a}{c}, \textnormal{ and } \\
+  \sin(\theta) &= \frac{a}{c}, \textrm{ and } \\
   \cos(\theta) &= \frac{b}{c}.
 \end{align*}
 $$

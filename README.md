@@ -86,3 +86,4 @@ git push -u origin gh-pages
 * [Multiple SSH Keys](https://gist.github.com/jexchan/2351996)
 * [Jonathan McGlone Blog Post](http://jmcglone.com/guides/github-pages/)
 * https://github.com/prose/starter/issues/44
+* [Zixu Wang's blog post for including math typesetting](https://hw311.me/en/jekyll/2019/01/23/support-latex-in-jekyll-blog/)

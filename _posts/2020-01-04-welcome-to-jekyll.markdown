@@ -30,16 +30,18 @@ print("Hello World!")
 
 "To find the appropriate identifier to use for the language you want to highlight, look for the “short name” on the [Rouge wiki](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)." - [Jekyll Tags Filter](https://jekyllrb.com/docs/liquid/tags/)
 
-Here is an example of some math typesetting. Use \$ for inline math expressions, e.g., $a^2 + b^2 = c^2$. Use \$\$ and `align` environment as shown below.
+Here is an example of some math typesetting. Use \\$ for inline math expressions, e.g., $a^2 + b^2 = c^2$. Use \\$\\$ and `align` environment as shown below.
 
 $$
 \begin{align}
   \nabla\times\vec{\mathbf{B}}-\frac{1}{c}\frac{\partial\vec{\mathbf{E}}}{\partial t} &= \frac{4\pi}{c}\vec{\mathbf{j}} \\
   \nabla\cdot\vec{\mathbf{E}} &= 4\pi\rho \\
   \nabla\times\vec{\mathbf{E}}+\frac{1}{c}\frac{\partial\vec{\mathbf{B}}}{\partial t} &= \vec{\mathbf{0}} \\
-  \nabla\cdot\vec{\mathbf{B}} &= 0
+  \nabla\cdot\vec{\mathbf{B}} &= 0\label{eqn:example}
 \end{align}
 $$
+
+I can reference \eqref{eqn:example} because it is labeled. The `align*` environment removes numbering.
 
 $$
 \begin{align*}

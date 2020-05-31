@@ -5,6 +5,8 @@ date:   2020-01-04 12:20:17 -0500
 tag: jekyll
 ---
 
+This introductory post contains some helpful information about the upkeep of my Jekyll website.
+
 # Blog Posts
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

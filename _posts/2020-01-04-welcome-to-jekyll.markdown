@@ -15,12 +15,20 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
+# This is an example for Ruby.
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+{% highlight r %}
+# This is a simple example for R.
+print("Hello World!")
+{% endhighlight %}
+
+"To find the appropriate identifier to use for the language you want to highlight, look for the “short name” on the [Rouge wiki](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)." - [Jekyll Tags Filter](https://jekyllrb.com/docs/liquid/tags/)
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 

@@ -30,6 +30,25 @@ print("Hello World!")
 
 "To find the appropriate identifier to use for the language you want to highlight, look for the “short name” on the [Rouge wiki](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)." - [Jekyll Tags Filter](https://jekyllrb.com/docs/liquid/tags/)
 
+Here is an example of some math typesetting. Use \$ for inline math expressions, e.g., $a^2 + b^2 = c^2$. Use \$\$ and `align` environment as shown below.
+
+$$
+\begin{align}
+  \nabla\times\vec{\mathbf{B}}-\frac{1}{c}\frac{\partial\vec{\mathbf{E}}}{\partial t} &= \frac{4\pi}{c}\vec{\mathbf{j}} \\
+  \nabla\cdot\vec{\mathbf{E}} &= 4\pi\rho \\
+  \nabla\times\vec{\mathbf{E}}+\frac{1}{c}\frac{\partial\vec{\mathbf{B}}}{\partial t} &= \vec{\mathbf{0}} \\
+  \nabla\cdot\vec{\mathbf{B}} &= 0
+\end{align}
+$$
+
+$$
+\begin{align*}
+  \dot{x} &= \sigma(y - x) \\
+  \dot{y} &= \rho x - y - xz \\
+  \dot{z} &= -\beta z + xy
+\end{align*}
+$$
+
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: https://jekyllrb.com/docs/home

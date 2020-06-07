@@ -38,6 +38,15 @@ Click on a tag to see corresponding list of blog posts.
   ---
 {% endfor %}
 
+<br>
+<br>
+<br>
+<br>
+
+<div style="text-align: center">
+<a href="/blog/" title="View Posts by Date">View Posts organized by Tags</a>
+</div>
+
 <!-- {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
   <ul style="list-style-type: none; margin:0">

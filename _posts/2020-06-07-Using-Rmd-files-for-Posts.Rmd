@@ -21,7 +21,9 @@ library(tidyr)
 library(kableExtra)
 ```
 
-Some blog posts will require the use of data and data-driven graphics to convey information, so it would be helpful to incorporate R in creating blog posts while adhering to the style of the website, e.g., font style, background, etc. I use [Jesse Cambon's blog post](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html) and the associated [Rmd file on GitHub](https://github.com/jessecambon/jessecambon.github.io/blob/master/_posts/2020-03-22-deploying-rmarkdown-online.Rmd) as a reference to accomplish this.
+Some blog posts will require the use of data and data-driven graphics to convey information, so it would be helpful to incorporate R in creating blog posts while adhering to the style of the website, e.g., font style, background, etc. I experiment with `ggplot`, `kable`, and `kableExtra`. 
+
+I use [Jesse Cambon's blog post](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html) and the associated [Rmd file on GitHub](https://github.com/jessecambon/jessecambon.github.io/blob/master/_posts/2020-03-22-deploying-rmarkdown-online.Rmd) as a reference to incorporate Rmd files as blog posts.
 
 ## YAML header
 ```{r eval = F}
@@ -56,6 +58,7 @@ Some lingering issues to fix or consider:
 * posts by tag should not include Rmd file 
 * include ggplot2 settings in `rmd_config.R`
 * learn about tooltips with `kableExtra`
+* learn about interactive plots with `plotly` and `ggplotly()`
 
 <!-- try {% if post contains ".md" | if post contains ".Rmd" %} {% endif %} -->
 
@@ -73,7 +76,9 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
 
 ## Including Tables
 
-```{r}
+This table was created with `knitr::kable` and `kableExtra`.
+
+```{r echo = FALSE}
 iris_table <- iris %>% 
   group_by(Species) %>% 
   summarize(mean_length = mean(Sepal.Length),
@@ -86,7 +91,7 @@ kable(iris_table,
       align = c("l", "c", "c"),
       digits = 2) %>% 
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"),
-                full_width = F,
+                full_width = FALSE,
                 position = "float_right")
 ```
 

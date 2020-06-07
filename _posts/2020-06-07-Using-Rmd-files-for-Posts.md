@@ -13,7 +13,9 @@ editor_options:
   chunk_output_type: console
 ---
 
-Some blog posts will require the use of data and data-driven graphics to convey information, so it would be helpful to incorporate R in creating blog posts while adhering to the style of the website, e.g., font style, background, etc. I use [Jesse Cambon’s blog post](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html) and the associated [Rmd file on GitHub](https://github.com/jessecambon/jessecambon.github.io/blob/master/_posts/2020-03-22-deploying-rmarkdown-online.Rmd) as a reference to accomplish this.
+Some blog posts will require the use of data and data-driven graphics to convey information, so it would be helpful to incorporate R in creating blog posts while adhering to the style of the website, e.g., font style, background, etc. I experiment with `ggplot`, `kable`, and `kableExtra`.
+
+I use [Jesse Cambon’s blog post](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html) and the associated [Rmd file on GitHub](https://github.com/jessecambon/jessecambon.github.io/blob/master/_posts/2020-03-22-deploying-rmarkdown-online.Rmd) as a reference to incorporate Rmd files as blog posts.
 
 ## YAML header
 
@@ -48,6 +50,7 @@ Some lingering issues to fix or consider:
   - posts by tag should not include Rmd file
   - include ggplot2 settings in `rmd_config.R`
   - learn about tooltips with `kableExtra`
+  - learn about interactive plots with `plotly` and `ggplotly()`
 
 <!-- try {% if post contains ".md" | if post contains ".Rmd" %} {% endif %} -->
 
@@ -59,22 +62,7 @@ My ggplot theme `theme_oakweb` was created using [Joey Stanley’s blog post](ht
 
 ## Including Tables
 
-``` r
-iris_table <- iris %>% 
-  group_by(Species) %>% 
-  summarize(mean_length = mean(Sepal.Length),
-            mean_width = mean(Sepal.Width))
-
-kable(iris_table, 
-      format = "html",
-      col.names = c("Species", "Mean Length", "Mean Width"),
-      linesep = "",
-      align = c("l", "c", "c"),
-      digits = 2) %>% 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"),
-                full_width = F,
-                position = "float_right")
-```
+This table was created with `knitr::kable` and `kableExtra`.
 
 <table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; float: right; margin-left: 10px;">
 

@@ -54,10 +54,7 @@ Notice that the text and background color of the page is consistent with the web
 
 Some lingering issues to fix or consider:
 
-* create `theme_oakweb`
-* check kable table
 * posts by tag should not include Rmd file 
-* include ggplot2 settings in `rmd_config.R`
 * learn about tooltips with `kableExtra`
 * learn about interactive plots with `plotly` and `ggplotly()`
 * change striped color of kableTable

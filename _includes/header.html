@@ -19,7 +19,7 @@
 					{% if node.title != null %}
 						{% if node.layout == "page" %}
 							{% if node.featured == true %}
-								<a class="{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+								<a class="{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.shorttitle }}</a>
 							{% endif %}
 						{% endif %}
 					{% endif %}

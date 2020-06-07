@@ -76,7 +76,7 @@ sampleplot <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Specie
   ggtitle("Sample Plot") +
   xlab("Sepal Length") +
   ylab("Sepal Width")
-ggplotly(sampleplot)
+# ggplotly(sampleplot)
 ```
 
 ## Including Tables

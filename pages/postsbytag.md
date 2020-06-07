@@ -12,7 +12,7 @@ Click on a tag to see corresponding list of posts.
 {% endfor %}
 </ul>
 
-<hr>
+---
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}
@@ -32,7 +32,7 @@ Click on a tag to see corresponding list of posts.
       {% endif %}
     {% endfor %}
   </ul>
-  <hr>
+  ---
 {% endfor %}
 
 <!-- {% for tag in site.tags %}

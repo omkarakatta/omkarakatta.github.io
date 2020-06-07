@@ -44,7 +44,7 @@ Click on a tag to see corresponding list of blog posts.
 <br>
 
 <div style="text-align: center">
-<a href="/blog/" title="View Posts by Date">View Posts organized by Date</a>
+<a href="/blog/" title="View Posts by Date">View posts organized by date</a>
 </div>
 
 <!-- {% for tag in site.tags %}

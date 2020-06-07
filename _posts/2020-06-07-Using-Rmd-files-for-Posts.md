@@ -3,14 +3,15 @@ layout: post
 title: "Using Rmd files for Posts"
 date:   2020-06-07
 tags: [r, jekyll]
-output: 
+output:
   md_document:
     pandoc_args: ["--wrap=none"]
     variant: gfm
     preserve_yaml: TRUE
 always_allow_html: true
-editor_options: 
+editor_options:
   chunk_output_type: console
+published: true
 ---
 
 Some blog posts will require the use of data and data-driven graphics to convey information, so it would be helpful to incorporate R in creating blog posts while adhering to the style of the website, e.g., font style, background, etc. I experiment with `ggplot`, `kable`, and `kableExtra`.
@@ -25,12 +26,12 @@ layout: post
 title: "Using Rmd files for Posts"
 date:   2020-06-07
 tags: [r, jekyll]
-output: 
+output:
   md_document:
     pandoc_args: ["--wrap=none"]
     variant: gfm
     preserve_yaml: TRUE
-editor_options: 
+editor_options:
   chunk_output_type: console
 ---
 ```

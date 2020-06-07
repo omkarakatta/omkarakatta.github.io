@@ -3,14 +3,15 @@ layout: post
 title: "Using Rmd files for Posts"
 date:   2020-06-07
 tags: [r, jekyll]
-output: 
+output:
   md_document:
     pandoc_args: ["--wrap=none"]
     variant: gfm
     preserve_yaml: TRUE
 always_allow_html: true
-editor_options: 
+editor_options:
   chunk_output_type: console
+published: true
 ---
 
 ```{r setup, include=FALSE}
@@ -22,7 +23,7 @@ library(tidyr)
 library(kableExtra)
 ```
 
-Some blog posts will require the use of data and data-driven graphics to convey information, so it would be helpful to incorporate R in creating blog posts while adhering to the style of the website, e.g., font style, background, etc. I experiment with `ggplot`, `kable`, and `kableExtra`. 
+Some blog posts will require the use of data and data-driven graphics to convey information, so it would be helpful to incorporate R in creating blog posts while adhering to the style of the website, e.g., font style, background, etc. I experiment with `ggplot`, `kable`, and `kableExtra`.
 
 I use [Jesse Cambon's blog post](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html) and the associated [Rmd file on GitHub](https://github.com/jessecambon/jessecambon.github.io/blob/master/_posts/2020-03-22-deploying-rmarkdown-online.Rmd) as a reference to incorporate Rmd files as blog posts.
 
@@ -33,12 +34,12 @@ layout: post
 title: "Using Rmd files for Posts"
 date:   2020-06-07
 tags: [r, jekyll]
-output: 
+output:
   md_document:
     pandoc_args: ["--wrap=none"]
     variant: gfm
     preserve_yaml: TRUE
-editor_options: 
+editor_options:
   chunk_output_type: console
 ---
 ```
@@ -61,7 +62,7 @@ Some lingering issues to fix or consider:
 
 ## Including Plots
 
-My ggplot theme `theme_oakweb` was created using [Joey Stanley's blog post](http://joeystanley.com/blog/custom-themes-in-ggplot2) so that the background and the text of the graphic would align with the website. 
+My ggplot theme `theme_oakweb` was created using [Joey Stanley's blog post](http://joeystanley.com/blog/custom-themes-in-ggplot2) so that the background and the text of the graphic would align with the website.
 
 <!-- I also reference [Juuso Parkkinen's blog post](https://ouzor.github.io/blog/2014/11/21/interactive-visualizations.html) to try out `plotly::ggplotly()`.  -->
 
@@ -78,17 +79,17 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
 ## Including Tables
 
 ```{r echo = FALSE}
-iris_table <- iris %>% 
-  group_by(Species) %>% 
+iris_table <- iris %>%
+  group_by(Species) %>%
   summarize(mean_length = mean(Sepal.Length),
             mean_width = mean(Sepal.Width))
 
-kable(iris_table, 
+kable(iris_table,
       format = "html",
       col.names = c("Species", "Mean Length", "Mean Width"),
       linesep = "",
       align = c("l", "c", "c"),
-      digits = 2) %>% 
+      digits = 2) %>%
   kable_styling(bootstrap_options = c("striped"),
                 full_width = FALSE,
                 position = "float_right")

@@ -254,16 +254,10 @@
  // #tagcloud { font-size:.9em;  }
 .tags li { display:inline;}
 
-a.nav {
+a.nav:link,
+a.nav:visited,
+a.nav:hover,
+a.nav:active {
   color: $text-color;
   text-decoration: none;
-}
-a.nav strong {
-  color: inherit;
-}
-/* `:focus` is linked to `:hover` for basic accessibility */
-a.nav:hover,
-a.nav:focus {
-  color: inherit;
-  text-decoration: underline;
 }

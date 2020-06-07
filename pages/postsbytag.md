@@ -5,10 +5,12 @@ title: "Blog Posts by Tag"
 <!-- Reference: https://raw.githubusercontent.com/jokecamp/jokecamp.com/master/tag.md -->
 Click on a tag to see corresponding list of posts.
 
-<ul class="tags" style="list-style-type: none; margin:0" display = "inline">
+<ul class="tags" style="list-style-type: none; margin:0">
 {% for tag in site.tags %}
   {% assign t = tag | first %}
-  <li><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></li>
+  <li display = "inline">
+    <a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a>
+  </li>
 {% endfor %}
 </ul>
 

@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: "Blog Posts by Date"
 shorttitle: Blog
 permalink: /blog/
 featured: true

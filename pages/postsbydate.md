@@ -5,6 +5,13 @@ permalink: /blog/
 featured: true
 ---
 
+<div>
+<a href="/tag/" title="View Posts by Tag">View posts organized by tags</a>
+</div>
+
+<br/>
+<br/>
+
 <ul>
 {% for post in site.posts %}
     {% if post.url contains ".html" %}
@@ -15,14 +22,3 @@ featured: true
     {% endif %}
 {% endfor %}
 </ul>
-
-<br>
-<br>
-<br>
-<br>
-
-
-
-<div style="text-align: center">
-<a href="/tag/" title="View Posts by Tag">View posts organized by tags</a>
-</div>

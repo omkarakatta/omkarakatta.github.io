@@ -2,9 +2,13 @@
 title: "Blog Posts by Tag"
 permalink: /tag/
 ---
-
+<div>
+<a href="/blog/" title="View Posts by Date">View posts organized by date</a>
+</div>
+<br/>
+<br/>
 <!-- Reference: https://raw.githubusercontent.com/jokecamp/jokecamp.com/master/tag.md -->
-Click on a tag to see corresponding list of blog posts.
+<!-- Click on a tag to see corresponding list of blog posts. -->
 
 <ul class = "tags">
 {% for tag in site.tags %}
@@ -38,14 +42,6 @@ Click on a tag to see corresponding list of blog posts.
   ---
 {% endfor %}
 
-<br>
-<br>
-<br>
-<br>
-
-<div style="text-align: center">
-<a href="/blog/" title="View Posts by Date">View posts organized by date</a>
-</div>
 
 <!-- {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>

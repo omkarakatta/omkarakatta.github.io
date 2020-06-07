@@ -51,6 +51,7 @@ Some lingering issues to fix or consider:
   - include ggplot2 settings in `rmd_config.R`
   - learn about tooltips with `kableExtra`
   - learn about interactive plots with `plotly` and `ggplotly()`
+  - change striped color of kableTable
 
 <!-- try {% if post contains ".md" | if post contains ".Rmd" %} {% endif %} -->
 
@@ -62,9 +63,9 @@ My ggplot theme `theme_oakweb` was created using [Joey Stanley’s blog post](ht
 
 ## Including Tables
 
-This table was created with `knitr::kable` and `kableExtra`.
+This table was created with `knitr::kable` and `kableExtra`. Unlike the html output, hovering over the table does not change the color of the rows, and since this is a static site, it might not be possible to include such options as “hover” and “responsive” in the bootstrap options of the kable table.
 
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; float: right; margin-left: 10px;">
+<table class="table table-striped table-condensed" style="width: auto !important; float: right; margin-left: 10px;">
 
 <thead>
 

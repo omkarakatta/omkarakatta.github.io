@@ -59,6 +59,7 @@ Some lingering issues to fix or consider:
 * include ggplot2 settings in `rmd_config.R`
 * learn about tooltips with `kableExtra`
 * learn about interactive plots with `plotly` and `ggplotly()`
+* change striped color of kableTable
 
 <!-- try {% if post contains ".md" | if post contains ".Rmd" %} {% endif %} -->
 
@@ -76,7 +77,7 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
 
 ## Including Tables
 
-This table was created with `knitr::kable` and `kableExtra`.
+This table was created with `knitr::kable` and `kableExtra`. Unlike the html output, hovering over the table does not change the color of the rows, and since this is a static site, it might not be possible to include such options as "hover" and "responsive" in the bootstrap options of the kable table.
 
 ```{r echo = FALSE}
 iris_table <- iris %>% 
@@ -90,7 +91,7 @@ kable(iris_table,
       linesep = "",
       align = c("l", "c", "c"),
       digits = 2) %>% 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+  kable_styling(bootstrap_options = c("striped", "condensed"),
                 full_width = FALSE,
                 position = "float_right")
 ```

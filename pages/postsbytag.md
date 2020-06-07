@@ -4,16 +4,16 @@ permalink: /tag/
 ---
 
 <!-- Reference: https://raw.githubusercontent.com/jokecamp/jokecamp.com/master/tag.md -->
-Click on a tag to see corresponding list of posts.
+<!-- Click on a tag to see corresponding list of posts. -->
 
-<!-- <ul style="list-style-type: none; margin:0" display = "inline"> -->
+<ul class = "tags">
 {% for tag in site.tags %}
   {% assign t = tag | first %}
-  <!-- <li display = "inline"> -->
+  <li>
     <a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a>
-  <!-- </li> -->
+  </li>
 {% endfor %}
-<!-- </ul> -->
+</ul>
 
 ---
 

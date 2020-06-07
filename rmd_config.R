@@ -22,7 +22,7 @@ theme_oakweb <- function(){
       plot.background = element_rect(fill="#eaeaea", colour=NA), 
       legend.background = element_rect(fill="transparent", colour=NA),
       legend.key = element_rect(fill="transparent", colour=NA),
-      plot.title = element_text(hjust = 0.5)
+      plot.title = element_text(hjust = 0.5, vjust = 2)
     )
 }
 theme_set(theme_oakweb())

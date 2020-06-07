@@ -5,7 +5,7 @@ title: "Blog Posts by Tag"
 <!-- Reference: https://raw.githubusercontent.com/jokecamp/jokecamp.com/master/tag.md -->
 Click on a tag to see corresponding list of posts.
 
-<ul class="tags" style="list-style-type: none; margin:0">
+<ul class="tags" style="list-style-type: none; margin:0" display = "inline">
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   <li display = "inline">

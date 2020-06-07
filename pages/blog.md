@@ -24,5 +24,5 @@ featured: true
 
 
 <div style="text-align: center">
-<a href="/tag/" title="View Posts by Tag">View Posts organized by Tags</a>
+<a href="/tag/" title="View Posts by Tag">View posts organized by tags</a>
 </div>

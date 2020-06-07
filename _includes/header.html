@@ -19,7 +19,7 @@
 					{% if node.title != null %}
 						{% if node.layout == "page" %}
 							{% if node.featured == true %}
-								<a class="{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.shorttitle }}</a>
+								<a class="{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}" title = "{{ node.title }}">{{ node.shorttitle }}</a>
 							{% endif %}
 						{% endif %}
 					{% endif %}
@@ -27,7 +27,7 @@
 	 <!-- <a class="page-link" href="/bio">Bio</a> -->
 	 <!-- <a class="page-link" href="/research">Research</a> -->
 	 <!-- <a class="page-link" href="/teaching">Teaching</a> -->
-	 <a class="page-link" href="/assets/CV/KattaOmkar_CV.pdf">CV</a>
+	 <a class="page-link" title = "Omkar's Curriculum Vitae" href="/assets/CV/KattaOmkar_CV.pdf">CV</a>
 	 <!-- <a class="page-link" href="/misc">Misc.</a> -->
         <!-- {% for page in site.pages %}
           {% if page.title %}

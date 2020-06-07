@@ -3,6 +3,7 @@
 library(knitr)
 library(stringr)
 library(here)
+library(ggplot2)
 # get name of file during knitting and strip file extension
 rmd_filename <- str_remove(knitr::current_input(),"\\.Rmd")
 
@@ -14,3 +15,14 @@ knitr::opts_chunk$set(fig.path = str_c("rmd_images/",rmd_filename,'/'),
                       fig.height = 4,
                       fig.width = 6,
                       fig.align = 'center')
+theme_oakweb <- function(){
+  theme_bw(base_size=12, base_family="Avenir Next") %+replace% 
+    theme(
+      panel.background  = element_blank(),
+      plot.background = element_rect(fill="#eaeaea", colour=NA), 
+      legend.background = element_rect(fill="transparent", colour=NA),
+      legend.key = element_rect(fill="transparent", colour=NA),
+      plot.title = element_text(hjust = 0.5)
+    )
+}
+theme_set(theme_oakweb())

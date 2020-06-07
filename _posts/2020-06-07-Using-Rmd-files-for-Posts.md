@@ -59,7 +59,7 @@ Some lingering issues to fix or consider:
 
 My ggplot theme `theme_oakweb` was created using [Joey Stanley’s blog post](http://joeystanley.com/blog/custom-themes-in-ggplot2) so that the background and the text of the graphic would align with the website.
 
-I also reference [Juuso Parkkinen’s blog post](https://ouzor.github.io/blog/2014/11/21/interactive-visualizations.html) to try out `plotly::ggplotly()`.
+<!-- I also reference [Juuso Parkkinen's blog post](https://ouzor.github.io/blog/2014/11/21/interactive-visualizations.html) to try out `plotly::ggplotly()`.  -->
 
 <img src="/rmd_images/2020-06-07-Using-Rmd-files-for-Posts/sampleplot-1.png" style="display: block; margin: auto;" />
 

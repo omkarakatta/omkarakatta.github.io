@@ -71,12 +71,12 @@ My ggplot theme `theme_oakweb` was created using [Joey Stanley's blog post](http
 <!-- I also reference [Juuso Parkkinen's blog post](https://ouzor.github.io/blog/2014/11/21/interactive-visualizations.html) to try out `plotly::ggplotly()`.  -->
 
 ```{r sampleplot, echo=FALSE}
-sampleplot <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
   geom_point() +
   ggtitle("Sample Plot") +
   xlab("Sepal Length") +
   ylab("Sepal Width")
-sampleplot
+# sampleplot
 # ggplotly(sampleplot, session = "knitr")
 ```
 

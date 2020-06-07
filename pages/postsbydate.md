@@ -15,7 +15,7 @@ featured: true
 <ul>
 {% for post in site.posts %}
     {% if post.url contains ".html" %}
-        {% if post.published == "true" %}
+        {% if post.published == true %}
             <li style="list-style-type: none; margin-left:-2em">
                 <span class="date">{{ post.date | date: "%b %Y"  }}: &nbsp; </span>
                 <a href="{{ post.url }}">{{ post.title }}</a>

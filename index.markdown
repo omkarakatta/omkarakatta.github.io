@@ -2,9 +2,6 @@
 layout: home
 ---
 
-<br/>
-<br/>
-
 **Research Professional**,
 [Becker Friedman Institute](https://bfi.uchicago.edu)<br/>
 Supervisors: [Alexander Torgovitsky](https://a-torgovitsky.github.io) & [Guillaume Pouliot](https://sites.google.com/site/guillaumeallairepouliot/)<br/>

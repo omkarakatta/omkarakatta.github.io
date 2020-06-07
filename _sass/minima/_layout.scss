@@ -253,4 +253,7 @@
  * Tags
  */
  #tagcloud { font-size:.9em;  }
-.tags { display:inline; background:$grey-color-light;}
+.tags {
+  display:inline;
+  background:$grey-color-dark;
+}

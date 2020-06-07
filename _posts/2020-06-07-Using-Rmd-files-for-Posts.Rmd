@@ -59,7 +59,6 @@ Some lingering issues to fix or consider:
 * learn about interactive plots with `plotly` and `ggplotly()`
 * change striped color of kableTable
 
-<!-- try {% if post contains ".md" | if post contains ".Rmd" %} {% endif %} -->
 
 ## Including Plots
 

@@ -53,4 +53,4 @@ Some lingering issues to fix:
 
 My ggplot theme `theme_oakweb` was created using [Joey Stanley’s blog post](http://joeystanley.com/blog/custom-themes-in-ggplot2) so that the background and the text of the graphic would align with the website.
 
-<img src="/rmd_images/2020-06-07-Using-Rmd-files-for-Posts/pressure-1.png" style="display: block; margin: auto;" />
+<img src="/rmd_images/2020-06-07-Using-Rmd-files-for-Posts/sampleplot-1.png" style="display: block; margin: auto;" />

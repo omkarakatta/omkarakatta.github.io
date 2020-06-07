@@ -61,9 +61,13 @@ Some lingering issues to fix:
 
 My ggplot theme `theme_oakweb` was created using [Joey Stanley's blog post](http://joeystanley.com/blog/custom-themes-in-ggplot2) so that the background and the text of the graphic would align with the website.
 
-```{r pressure, echo=FALSE}
-ggplot(pressure, aes(x = temperature, y = pressure)) +
+```{r sampleplot, echo=FALSE}
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
   geom_point() +
-  ggtitle("Sample Plot")
+  ggtitle("Sample Plot") +
+  xlab("Sepal Length") +
+  ylab("Sepal Width")
 ```
+
+
 

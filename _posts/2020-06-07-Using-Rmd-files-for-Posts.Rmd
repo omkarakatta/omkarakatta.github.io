@@ -12,6 +12,7 @@ output:
 
 ```{r setup, include=FALSE}
 source(here::here("rmd_config.R"))
+library(ggplot2)
 ```
 
 Some blog posts will require the use of data and data-driven graphics to convey information, so it would be helpful to incorporate R in creating blog posts while adhering to the style of the website, e.g., font style, background, etc. I use [Jesse Cambon's blog post](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html) and the associated [Rmd file on GitHub](https://github.com/jessecambon/jessecambon.github.io/blob/master/_posts/2020-03-22-deploying-rmarkdown-online.Rmd) as a reference.
@@ -31,7 +32,8 @@ summary(cars)
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
-plot(pressure)
+ggplot(pressure, aes(x = temperature, y = pressure)) +
+  ggtitle("Sample Plot")
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

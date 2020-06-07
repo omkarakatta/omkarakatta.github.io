@@ -33,6 +33,7 @@ You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
 ggplot(pressure, aes(x = temperature, y = pressure)) +
+  geom_point() +
   ggtitle("Sample Plot")
 ```
 

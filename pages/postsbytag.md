@@ -1,6 +1,7 @@
 ---
 title: "Blog Posts by Tag"
 permalink: /tag/
+featured: true
 ---
 
 <!-- Reference: https://raw.githubusercontent.com/jokecamp/jokecamp.com/master/tag.md -->

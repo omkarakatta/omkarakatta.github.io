@@ -1,0 +1,18 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+featured: true
+---
+
+<ul>
+{% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a><span class="date">{{ post.date | date: "%B %Y"  }}</span></li>
+{% endfor %}
+</ul>
+
+<hr>
+
+<div>
+<a href="/tag/" title="View Posts by Tag" text-align="center">View Posts organized by Tags</a>
+</div>

@@ -8,6 +8,7 @@ output:
     pandoc_args: ["--wrap=none"]
     variant: gfm
     preserve_yaml: TRUE
+always_allow_html: true
 editor_options: 
   chunk_output_type: console
 ---
@@ -48,12 +49,13 @@ In the root directory is a file called `rmd_config.R` which houses configuration
 
 Notice that the text and background color of the page is consistent with the website. However, ggplot and base R graphics are not by default. To solve this issue with ggplot, I create my own ggplot theme `theme_oakweb`.
 
-Some lingering issues to fix:
+Some lingering issues to fix or consider:
 
 * create `theme_oakweb`
 * check kable table
 * posts by tag should not include Rmd file 
 * include ggplot2 settings in `rmd_config.R`
+* learn about tooltips with `kableExtra`
 
 <!-- try {% if post contains ".md" | if post contains ".Rmd" %} {% endif %} -->
 
@@ -69,5 +71,22 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
   ylab("Sepal Width")
 ```
 
+## Including Tables
 
+```{r}
+iris_table <- iris %>% 
+  group_by(Species) %>% 
+  summarize(mean_length = mean(Sepal.Length),
+            mean_width = mean(Sepal.Width))
+
+kable(iris_table, 
+      format = "html",
+      col.names = c("Species", "Mean Length", "Mean Width"),
+      linesep = "",
+      align = c("l", "c", "c"),
+      digits = 2) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+                full_width = F,
+                position = "float_right")
+```
 

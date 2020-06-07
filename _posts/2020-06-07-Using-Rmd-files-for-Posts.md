@@ -61,6 +61,8 @@ My ggplot theme `theme_oakweb` was created using [Joey Stanley’s blog post](ht
 
 I also reference [Juuso Parkkinen’s blog post](https://ouzor.github.io/blog/2014/11/21/interactive-visualizations.html) to try out `plotly::ggplotly()`.
 
+<img src="/rmd_images/2020-06-07-Using-Rmd-files-for-Posts/sampleplot-1.png" style="display: block; margin: auto;" />
+
 ## Including Tables
 
 <table class="table table-striped table-condensed" style="width: auto !important; float: right; margin-left: 10px;">

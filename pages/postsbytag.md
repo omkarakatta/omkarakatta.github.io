@@ -9,7 +9,7 @@ Click on a tag to see corresponding list of blog posts.
 <ul class = "tags">
 {% for tag in site.tags %}
   {% assign t = tag | first %}
-  <li style = "margin:3em">
+  <li style = "margin:1em">
     <a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a>
   </li>
 {% endfor %}

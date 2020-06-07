@@ -3,7 +3,7 @@ title: "Blog Posts by Tag"
 ---
 
 <!-- Reference: https://raw.githubusercontent.com/jokecamp/jokecamp.com/master/tag.md -->
-Click on a tag to see corresponding list of posts.
+<!-- Click on a tag to see corresponding list of posts. -->
 
 <!-- <ul style="list-style-type: none; margin:0" display = "inline"> -->
 {% for tag in site.tags %}
@@ -20,7 +20,7 @@ Click on a tag to see corresponding list of posts.
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-  <h3><a name="{{t | downcase | replace:" ","-" }} id = "{{t | downcase}}""></a><a class="internal" href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h3>
+  <h3><a name="{{t | downcase | replace:" ","-" }}" id = "{{t | downcase}}"></a><a class="internal" href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h3>
   <ul style="list-style-type: none; margin:0">
     {% for post in posts %}
       {% if post.url contains ".html" %}

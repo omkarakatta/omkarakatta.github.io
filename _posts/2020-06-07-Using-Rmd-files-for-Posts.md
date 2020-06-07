@@ -55,9 +55,13 @@ Some lingering issues to fix or consider:
 
 <!-- try {% if post contains ".md" | if post contains ".Rmd" %} {% endif %} -->
 
-## Including Tables
+## Including Plots
 
-This table was created with `knitr::kable` and `kableExtra`. Unlike the html output, hovering over the table does not change the color of the rows, and since this is a static site, it might not be possible to include such options as “hover” and “responsive” in the bootstrap options of the kable table.
+My ggplot theme `theme_oakweb` was created using [Joey Stanley’s blog post](http://joeystanley.com/blog/custom-themes-in-ggplot2) so that the background and the text of the graphic would align with the website.
+
+<img src="/rmd_images/2020-06-07-Using-Rmd-files-for-Posts/sampleplot-1.png" style="display: block; margin: auto;" />
+
+## Including Tables
 
 <table class="table table-striped table-condensed" style="width: auto !important; float: right; margin-left: 10px;">
 
@@ -159,8 +163,4 @@ virginica
 
 </table>
 
-## Including Plots
-
-My ggplot theme `theme_oakweb` was created using [Joey Stanley’s blog post](http://joeystanley.com/blog/custom-themes-in-ggplot2) so that the background and the text of the graphic would align with the website.
-
-<img src="/rmd_images/2020-06-07-Using-Rmd-files-for-Posts/sampleplot-1.png" style="display: block; margin: auto;" />
+This table was created with `knitr::kable` and `kableExtra`. Unlike the html output, hovering over the table does not change the color of the rows, and since this is a static site, it might not be possible to include such options as “hover” and “responsive” in the bootstrap options of the kable table.

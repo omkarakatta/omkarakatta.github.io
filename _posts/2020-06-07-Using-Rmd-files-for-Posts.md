@@ -45,12 +45,9 @@ Notice that the text and background color of the page is consistent with the web
 
 Some lingering issues to fix or consider:
 
-  - posts by tag should not include Rmd file
   - learn about tooltips with `kableExtra`
   - learn about interactive plots with `plotly` and `ggplotly()`
   - change striped color of kableTable
-
-<!-- try {% if post contains ".md" | if post contains ".Rmd" %} {% endif %} -->
 
 ## Including Plots
 
@@ -62,7 +59,7 @@ My ggplot theme `theme_oakweb` was created using [Joey Stanley’s blog post](ht
 
 ## Including Tables
 
-<table class="table table-striped table-condensed" style="width: auto !important; float: right; margin-left: 10px;">
+<table class="table table-striped" style="width: auto !important; float: right; margin-left: 10px;">
 
 <thead>
 

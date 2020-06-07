@@ -54,7 +54,6 @@ Notice that the text and background color of the page is consistent with the web
 
 Some lingering issues to fix or consider:
 
-* posts by tag should not include Rmd file 
 * learn about tooltips with `kableExtra`
 * learn about interactive plots with `plotly` and `ggplotly()`
 * change striped color of kableTable
@@ -90,7 +89,7 @@ kable(iris_table,
       linesep = "",
       align = c("l", "c", "c"),
       digits = 2) %>% 
-  kable_styling(bootstrap_options = c("striped", "condensed"),
+  kable_styling(bootstrap_options = c("striped"),
                 full_width = FALSE,
                 position = "float_right")
 ```

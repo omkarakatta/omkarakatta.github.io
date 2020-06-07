@@ -19,6 +19,10 @@ defaults:
       path: "pages"
     values:
       layout: "page"
+  - scope:
+      path: "posts"
+    values:
+      published: false
 
 exclude: ["README.md"]
 # Exclude from processing.

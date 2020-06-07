@@ -87,3 +87,5 @@ git push -u origin gh-pages
 * [Jonathan McGlone Blog Post](http://jmcglone.com/guides/github-pages/)
 * https://github.com/prose/starter/issues/44
 * [Zixu Wang's blog post for including math typesetting](https://hw311.me/en/jekyll/2019/01/23/support-latex-in-jekyll-blog/)
+* [Joe Kampschmidt's post for creating a list of posts by tag]
+* [Jesse Cambon’s blog post for incorporating R functionality with blog posts](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html)

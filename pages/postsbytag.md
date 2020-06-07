@@ -4,7 +4,7 @@ permalink: /tag/
 ---
 
 <!-- Reference: https://raw.githubusercontent.com/jokecamp/jokecamp.com/master/tag.md -->
-Click on a tag to see corresponding list of posts.
+<!-- Click on a tag to see corresponding list of posts. -->
 
 <ul class = "tags">
 {% for tag in site.tags %}

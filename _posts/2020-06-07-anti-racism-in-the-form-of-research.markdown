@@ -3,7 +3,7 @@ layout: post
 title:  "Anti-racism in the Form of Research"
 date:   2020-06-07
 tags: research personal thoughts racism
-published: false
+hidden: false
 ---
 
 As the pandemic continues to rage, stories of police brutality and unfair racial prejudice rise to the surface. In response to the horrific and needless violence against black people, protests and riots have been swarming all over the nation in support of the black community against racism. With the time to reflect afforded by the lockdowns and the severity of the crimes committed against black Americans, I, like many others, are thinking about ways in which we can address racism.

@@ -13,9 +13,11 @@ permalink: /tag/
 <ul class = "tags">
 {% for tag in site.tags %}
   {% assign t = tag | first %}
-  <li style = "margin-right:2em; margin-left:-2em; padding:0 4px">
-    <a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a>
-  </li>
+    {% if post.hidden == true %}
+      <li style = "margin-right:2em; margin-left:-2em; padding:0 4px">
+        <a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a>
+      </li>
+    {% endif %}
 {% endfor %}
 </ul>
 
@@ -24,17 +26,18 @@ permalink: /tag/
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
-
   <h3><a name="{{t | downcase | replace:" ","-" }}" id = "{{t | downcase}}"></a><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h3>
   <ul style="list-style-type: none; margin:0">
     {% for post in posts %}
       {% if post.url contains ".html" %}
         {% if post.tags contains t %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
-          {{ post.excerpt }}
-        </li>
+          {% if post.hidden == true %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+              {{ post.excerpt }}
+            </li>
+          {% endif %}
         {% endif %}
       {% endif %}
     {% endfor %}

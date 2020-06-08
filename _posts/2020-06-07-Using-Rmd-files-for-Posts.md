@@ -11,7 +11,7 @@ output:
 always_allow_html: true
 editor_options:
   chunk_output_type: console
-published: true
+hidden: true
 ---
 
 Some blog posts will require the use of data and data-driven graphics to convey information, so it would be helpful to incorporate R in creating blog posts while adhering to the style of the website, e.g., font style, background, etc. I experiment with `ggplot`, `kable`, and `kableExtra`.

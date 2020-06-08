@@ -3,29 +3,32 @@ layout: post
 title:  "Anti-racism in the Form of Research"
 date:   2020-06-07
 tags: research personal thoughts racism
-published: true
+published: false
 ---
 
 As the pandemic continues to rage, stories of police brutality and unfair racial prejudice rise to the surface. In response to the horrific and needless violence against black people, protests and riots have been swarming all over the nation in support of the black community against racism. With the time to reflect afforded by the lockdowns and the severity of the crimes committed against black Americans, I, like many others, are thinking about ways in which we can address racism.
 
 As a brown man, I cannot truly understand the pain and struggle that so many black people are going through right now and have been going through for the past several centuries. The unbearable hurt and pain that I do feel makes me shudder at how excruciating it must be for the black community.
 
-> "Injustice anywhere is a threat to justice everywhere."
-> - Martin Luther King, Jr.
+> "Injustice anywhere is a threat to justice everywhere." &nbsp; Martin Luther King, Jr.
 
 I acknowledge that I have been sitting in the sidelines. At times, I feel as though that as a person of color, I am a victim of racism, which puts me in the position of being helpless in fighting back. But I know that I only think this way to rationalize my passivity. While I am indeed a person of color, I am also a person of privilege, which means that any reason I have for being the sidelines is an excuse that I say to make myself feel better for not being a part of the solution. In the weeks leading up to graduation, we have all been hearing words from older generations saying that as graduates, we now have the power and credibility to change the world for the better. It is our obligation to use the privilege of a Penn education to help humanity.
 
-**What could I possibly do to help?**
+## What could I possibly do to help now?
 
 I live in a generation that does not take the crimes against black people lightly, and they have inspired me to find out the answer to this question. They are encouraging people to donate to organizations that advocate for black Americans and support those who protest against racism. They raise their voices in the form of peaceful marches, demanding petitions, and incisive critiques of the institutions to which they belong. They promote black literature and art to open our eyes to the injustice we have long-ignored. The importance of these actions cannot be overstated. These actions, with caution, can and should be done now.
 
-A problem as systemic as racism seems to require a solution that is just as infrastructural. While the bursts of protests and donations raise awareness for those with power to change the infrastructure, I wonder: as someone who has no direct influence on infrastructure at the current moment, **how can I complement these high-impact, short-term actions with sustained and persistent support of the black community**?
+A problem as systemic as racism seems to require a solution that is just as infrastructural. While the bursts of protests and donations raise awareness for those with power to change the infrastructure, I wonder: as someone who has no direct influence on infrastructure at the current moment, how can I complement these high-impact, short-term actions with sustained and persistent support of the black community?
+
+## What can I continue to do to help in the future?
 
 I approach this question by first reminding myself what my long-term goals are so that I can align my goals with my efforts to fight against racism. In my journey to ultimately become a professor at the forefront of education reform, I aim to advance the intellectual frontier by finding and understanding the truth while revealing and understanding falsehood. But how does this intellectual frontier help innocent people who are suffering at the hands of policy brutality or the innocent people who are facing the consequences of violent protest?
 
 An obvious answer would be to use my training to study and uncover the mechanisms of racism, especially at a systemic level. In fact, one of the reasons I decided to pursue economics was that as a social science itself, economics positions me directly at the intersection of so many different sciences that directly study discrimination. Perhaps it is in my study of education reform that I highlight how despite being marketed as an equalizer or despite touting meritocratic ideals, our infrastructure disenfranchises marginalized students for reasons beyond their control and consequently privileges the white, male, and heterosexual counterparts. No matter the field I decide to study, I promise to be deliberate in my research to study the problems facing black and marginalized communities. Coupled with my resolve to produce accurate and transparent research, I will produce knowledge that can help those who are finding and implementing solutions to the problems of systemic racism.
 
 But delivering this promise is not enough. I can’t in good conscience sit in an ivory tower and pretend that simply by being a researcher, I will be a part of the solution. Otherwise, I would be extending the distanced support that I’ve done thus far in my life, which is not enough. I need to actively fight against racism and all forms of unjust discrimination while I am a professor. At best, suppose I arrive at research-based, data-driven, empirically and theoretically-proven, experimentally-tested solutions that will be effective when scaled. I might write a couple of papers to justify my proposals. But then what?
+
+## Empathy within Research
 
 In my limited experience as an economist, I recognize that the disciplines of academia can be insular. While the type of economics I want to pursue is all about people, not many people have the desire or the literacy to understand the research. So the only ones who might read and understand my work at the onset would be other economists. In fact, it seems as though most economists write solely for other economists. Of course, I want other economists and social scientists so that they can find flaws in my argument and offer constructive critiques so that I can polish my ideas. But beyond interacting with economists, I will need to create nontechnical summaries and tools to help my research be understood by a wide audience.
 

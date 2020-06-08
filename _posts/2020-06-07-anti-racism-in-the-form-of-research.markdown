@@ -10,7 +10,7 @@ As the pandemic continues to rage, stories of police brutality and unfair racial
 
 As a brown man, I cannot truly understand the pain and struggle that so many black people are going through right now and have been going through for the past several centuries. The unbearable hurt and pain that I do feel makes me shudder at how excruciating it must be for the black community.
 
-> "Injustice anywhere is a threat to justice everywhere." &nbsp; Martin Luther King, Jr.
+> "Injustice anywhere is a threat to justice everywhere." &nbsp;&nbsp; - Martin Luther King, Jr.
 
 I acknowledge that I have been sitting in the sidelines. At times, I feel as though that as a person of color, I am a victim of racism, which puts me in the position of being helpless in fighting back. But I know that I only think this way to rationalize my passivity. While I am indeed a person of color, I am also a person of privilege, which means that any reason I have for being the sidelines is an excuse that I say to make myself feel better for not being a part of the solution. In the weeks leading up to graduation, we have all been hearing words from older generations saying that as graduates, we now have the power and credibility to change the world for the better. It is our obligation to use the privilege of a Penn education to help humanity.
 

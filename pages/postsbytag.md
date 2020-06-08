@@ -5,7 +5,9 @@ permalink: /tag/
 <div>
 <a href="/blog/" title="View Posts by Date">View posts organized by date</a>
 </div>
+
 <br/>
+This blog is a way for me to record my life as an aspiring academic. I hope it will serve to be a creative outlet for me as well as a way in which I can formalize my teaching and research philosophy. Perhaps one day, it will be useful for creating a blog that will be open to the public. But for now, these posts are solely for my meditation.
 <br/>
 <!-- Reference: https://raw.githubusercontent.com/jokecamp/jokecamp.com/master/tag.md -->
 <!-- Click on a tag to see corresponding list of blog posts. -->

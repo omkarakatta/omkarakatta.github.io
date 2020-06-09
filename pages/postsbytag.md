@@ -42,7 +42,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
       {% endif %}
     {% endfor %}
   </ul>
-  <!-- --- -->
+  ---
 {% endfor %}
 
 

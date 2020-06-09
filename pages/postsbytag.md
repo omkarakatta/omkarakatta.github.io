@@ -34,20 +34,19 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
 
 ---
 
-{% for tag in site.tags %}
+<!-- {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
-  {% for post in posts %}
-    {% if post.url contains ".html" %}
-      {% if post.tags contains t %}
-        {% if post.hidden == false %}
-          <h3><a name="{{t | downcase | replace:" ","-" }}" id = "{{t | downcase}}"></a><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h3>
-          {% break %}
+    {% for post in posts %}
+      {% if post.url contains ".html" %}
+        {% if post.tags contains t %}
+          {% if post.hidden == false %}
+            <h3><a name="{{t | downcase | replace:" ","-" }}" id = "{{t | downcase}}"></a><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h3>
+            {% break %}
+          {% endif %}
         {% endif %}
       {% endif %}
-    {% endif %}
-    <!-- {% break %} -->
-  {% endfor %}
+    {% endfor %}
   <ul style="list-style-type: none; margin:0">
     {% for post in posts %}
       {% if post.url contains ".html" %}
@@ -55,16 +54,16 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
           {% if post.hidden == false %}
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
-              <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+              <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span> -->
               <!-- {{ post.excerpt }} -->
-            </li>
+            <!-- </li>
           {% endif %}
         {% endif %}
       {% endif %}
     {% endfor %}
   </ul>
   ---
-{% endfor %}
+{% endfor %} -->
 
 
 <!-- {% for tag in site.tags %}

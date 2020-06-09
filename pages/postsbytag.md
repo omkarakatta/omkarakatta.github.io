@@ -32,7 +32,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
 {% endfor %}
 </ul>
 
----
+<hr>
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}
@@ -48,7 +48,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
         {% endif %}
       {% endif %}
     {% endfor %} -->
-  <ul style="list-style-type: none; margin:0">
+  <ul style="list-style-type: none; margin:-2em">
     {% for post in posts %}
       {% if post.url contains ".html" %}
         {% if post.tags contains t %}

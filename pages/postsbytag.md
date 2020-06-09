@@ -52,7 +52,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
       {% if post.url contains ".html" %}
         {% if post.tags contains t %}
           {% if post.hidden == false %}
-            <li style="list-style-type: none; margin:0">
+            <li style="list-style-type: none; margin:-2em">
               <a href="{{ post.url }}">{{ post.title }}</a>
               <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
               {{ post.excerpt }}

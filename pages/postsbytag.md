@@ -33,7 +33,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
     {% for post in posts %}
       {% if post.url contains ".html" %}
         {% if post.tags contains t %}
-          {% if post.hidden == true %}
+          {% if post.hidden == false %}
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
               <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
@@ -44,7 +44,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
       {% endif %}
     {% endfor %}
   </ul>
-  ---
+  <!-- --- -->
 {% endfor %}
 
 

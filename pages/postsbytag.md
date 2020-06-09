@@ -37,7 +37,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
               <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
-              {{ post.excerpt }}
+              <!-- {{ post.excerpt }} -->
             </li>
           {% endif %}
         {% endif %}

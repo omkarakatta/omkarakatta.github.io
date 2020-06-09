@@ -48,7 +48,21 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
         {% endif %}
       {% endif %}
     {% endfor %} -->
-  <ul style="list-style-type: none; margin:-2em">
+  <ul>
+  {% for post in posts %}
+      {% if post.url contains ".html" %}
+        {% if post.tags contains t %}
+          {% if post.hidden == false %}
+              <li style="list-style-type: none; margin-left:-2em">
+                  <span class="date">{{ post.date | date: "%b %d, %Y"  }}: &nbsp; </span>
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+  {% endfor %}
+  </ul>
+  <!-- <ul style="list-style-type: none; margin:-2em">
     {% for post in posts %}
       {% if post.url contains ".html" %}
         {% if post.tags contains t %}
@@ -56,13 +70,12 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
               <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
-              <!-- {{ post.excerpt }} -->
             </li>
           {% endif %}
         {% endif %}
       {% endif %}
     {% endfor %}
-  </ul>
+  </ul> -->
   <!-- --- -->
 {% endfor %}
 

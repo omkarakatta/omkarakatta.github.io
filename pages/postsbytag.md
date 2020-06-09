@@ -34,7 +34,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
 
 ---
 
-<!-- {% for tag in site.tags %}
+{% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
     {% for post in posts %}
@@ -47,7 +47,8 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
         {% endif %}
       {% endif %}
     {% endfor %}
-  <ul style="list-style-type: none; margin:0">
+{% endfor %}
+  <!-- <ul style="list-style-type: none; margin:0">
     {% for post in posts %}
       {% if post.url contains ".html" %}
         {% if post.tags contains t %}

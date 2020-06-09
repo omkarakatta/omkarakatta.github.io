@@ -37,7 +37,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
-  <!-- <h3><a name="{{t | downcase | replace:" ","-" }}" id = "{{t | downcase}}"></a><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h3> -->
+  <h3><a name="{{t | downcase | replace:" ","-" }}" id = "{{t | downcase}}"></a><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h3>
   <ul>
     {% for post in posts %}
       {% if post.url contains ".html" %}

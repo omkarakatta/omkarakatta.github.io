@@ -41,7 +41,8 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
       {% if post.url contains ".html" %}
         {% if post.tags contains t %}
           {% if post.hidden == false %}
-            <h3><a name="{{t | downcase | replace:" ","-" }}" id = "{{t | downcase}}"></a><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h3>
+          hi
+            <!-- <h3><a name="{{t | downcase | replace:" ","-" }}" id = "{{t | downcase}}"></a><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h3> -->
             {% break %}
           {% endif %}
         {% endif %}

@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2020-01-04 12:20:17 -0500
 tag: jekyll
-hidden: true
+hidden: false
 ---
 
 This introductory post contains some helpful information about the upkeep of my Jekyll website.

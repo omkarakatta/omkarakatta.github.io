@@ -15,7 +15,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
 <ul class = "tags">
 {% for tag in site.tags %}
   {% assign t = tag | first %}
-    {% if post.hidden == true %}
+    {% if post.hidden == false %}
       <li style = "margin-right:2em; margin-left:-2em; padding:0 4px">
         <a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a>
       </li>

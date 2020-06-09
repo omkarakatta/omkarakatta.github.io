@@ -22,7 +22,7 @@ defaults:
   - scope:
       path: "posts"
     values:
-      published: false
+      hidden: true
 
 exclude: ["README.md"]
 # Exclude from processing.

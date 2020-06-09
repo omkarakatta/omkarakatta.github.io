@@ -16,7 +16,7 @@ This blog is a way for me to record my life as an aspiring academic. I hope it w
 <ul>
 {% for post in site.posts %}
     {% if post.url contains ".html" %}
-        {% if post.hidden == true %}
+        {% if post.hidden == false %}
             <li style="list-style-type: none; margin-left:-2em">
                 <span class="date">{{ post.date | date: "%b %d, %Y"  }}: &nbsp; </span>
                 <a href="{{ post.url }}">{{ post.title }}</a>
